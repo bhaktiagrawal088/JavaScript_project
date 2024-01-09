@@ -1,5 +1,5 @@
-const container = document.getElementsByClassName('notes-container');
-const createbtn = document.getElementsByClassName('button');
+const container = document.querySelector('.notes-container');
+const createbtn = document.querySelector('.btn');
 let notes = document.querySelectorAll('.input-box');
 
 function updateStorage(){
@@ -12,7 +12,7 @@ createbtn.addEventListener('click', ()=>{
     inputBox.className = 'input-box';
     inputBox.setAttribute('contenteditable', 'true');
     img.src = "notes-app-img/images/delete.png";
-    container.appendChild('inputBox').appendChild('img');
+    container.appendChild(inputBox).appendChild(img);
 })
 
 container.addEventListener('click', function(e){
