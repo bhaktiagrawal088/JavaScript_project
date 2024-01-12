@@ -47,7 +47,7 @@ body{
 }
 @keyframes moveleft {
     100%{
-        transform: translateX(100%);
+        transform: translateX(0);
     }
 }
 .toast i{
@@ -62,7 +62,7 @@ body{
     color: orange;
 }
 .toast::after{
-    content: " ";
+    content: ' ';
     position: absolute;
     left: 0;
     bottom: 0;
@@ -77,8 +77,8 @@ body{
     }
 }
 .toast.error::after{
-    background-color: red;
+    background: red;
 }
 .toast.invalid::after{
-    background-color: orange;
+    background: orange;
 }
